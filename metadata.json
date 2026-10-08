@@ -1,0 +1,7 @@
+{
+  "name": "TERRAVITA | Regenerative Living Compost",
+  "description": "Premium organic thermal-cured compost and biochar blends engineered for active mycorrhizae, thriving root systems, and living soil vitality.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+
