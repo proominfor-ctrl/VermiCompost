@@ -1,3 +1,9 @@
+import redWormsContainer from '../assets/images/red_worms_container_1791467929309.jpg';
+import redWormsCluster from '../assets/images/red_worms_cluster_1791467942508.jpg';
+import handsHoldingWorms from '../assets/images/hands_holding_worms_1791467955176.jpg';
+import biocharBlend from '../assets/images/product_biochar_blend_1791466787869.jpg';
+import pureVermicompostBag from '../assets/images/pure_vermicompost_bag_1791467968292.jpg';
+
 export interface ProductPackage {
   id: string;
   name: string;
@@ -32,7 +38,7 @@ export const ARABIC_PRODUCTS: ArabicProduct[] = [
     categoryLabel: 'الدودة الحمراء - دودة السماد',
     scientificName: 'Eisenia Fetida / Red Wigglers',
     description: 'دودة السماد هي أحد أنواع دودة الأرض التي تعيش على سطح القشرة الأرضية وتتغذى على المواد العضوية المتحللة لتحولها إلى سماد الفيرميكمبوست. صنف ملائم جداً لمناخ المغرب وسريع التكاثر والإنتاج.',
-    image: '/src/assets/images/red_worms_container_1791467929309.jpg',
+    image: redWormsContainer,
     badges: ['أصلية 100%', 'ملائمة لمناخ المغرب', 'إنتاج منزلي'],
     features: [
       '100 دودة بالغة قادرة على وضع الشرانق والتكاثر السريع',
@@ -57,7 +63,7 @@ export const ARABIC_PRODUCTS: ArabicProduct[] = [
     categoryLabel: 'الأكثر مبيعاً للحدائق',
     scientificName: 'Eisenia Fetida / Red Wigglers',
     description: 'كمية متوازنة توفر مستعمرة قوية قادرة على التهام كيلوغرامات من النفايات العضوية أسبوعياً وتحويلها إلى سماد أسود فاخر غني بالعناصر والكائنات الدقيقة المفيدة.',
-    image: '/src/assets/images/red_worms_cluster_1791467942508.jpg',
+    image: redWormsCluster,
     badges: ['الأكثر طلباً', 'مستعمرة سريعة', 'وفر 50 درهم'],
     features: [
       '300 دودة حية مع بيض وشرانق نشطة',
@@ -82,7 +88,7 @@ export const ARABIC_PRODUCTS: ArabicProduct[] = [
     categoryLabel: 'قيمة ممتازة للمزارع',
     scientificName: 'Eisenia Fetida / Tiger Worm',
     description: 'الحزمة الاحترافية للمزارعين وأصحاب الضيعات والبيوت البلاستيكية. تعطي دفعة فورية لإنتاج الفيرميكمبوست السائل والصلب وتحسين خصوبة التربة المجهدة.',
-    image: '/src/assets/images/hands_holding_worms_1791467955176.jpg',
+    image: handsHoldingWorms,
     badges: ['أفضل توفير', 'مزارع وضيعات', 'وفر 200 درهم'],
     features: [
       '500 دودة منتقاة يدوياً مع مستعمرة متكاملة',
@@ -107,7 +113,7 @@ export const ARABIC_PRODUCTS: ArabicProduct[] = [
     categoryLabel: 'طلبيات الجملة والمشاريع',
     scientificName: 'الزاحف الأوروبي ودود الإسيينيا',
     description: 'حل مخصص للتعاونيات الفلاحية والمشاريع الزراعية الكبرى ومزارع تدوير النفايات. نوفر كميات ضخمة مع التوصيل والإشراف التقني على تأسيس المزرعة.',
-    image: '/src/assets/images/product_biochar_blend_1791466787869.jpg',
+    image: biocharBlend,
     badges: ['1 درهم للدودة', 'مشاريع كبرى', 'إشراف وتدريب'],
     features: [
       'سعر تفضيلي ثابت: 1 درهم للدودة الواحدة',
@@ -133,7 +139,7 @@ export const ARABIC_PRODUCTS: ArabicProduct[] = [
     category: 'compost',
     categoryLabel: 'سماد الفيرميكمبوست النقي',
     description: 'الفيرمكمبوست سماد عضوي طبيعي ناتج عن مخلفات دودة الأرض التي تتغذى على المادة العضوية المتحللة. يحتوي على جميع العناصر المغذية الضرورية للنبات بالإضافة لاحتوائه على ملايين الكائنات الحية المجهرية المفيدة للأرض والتي تحمي النبات من الأمراض وترفع من خصوبة الأرض.',
-    image: '/src/assets/images/pure_vermicompost_bag_1791467968292.jpg',
+    image: pureVermicompostBag,
     badges: ['طبيعي 100%', 'بدون روائح كيميائية', 'جاهز للاستعمال'],
     features: [
       'غني بعناصر N-P-K الطبيعية وحمض الهيوميك والفولفيك',

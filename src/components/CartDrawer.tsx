@@ -38,7 +38,7 @@ export const CartDrawer: React.FC<CartDrawerProps> = ({
   const shippingFee = isFreeShipping ? 0 : 40; // 40 درهم للشحن السريع
   const total = rawSubtotal + shippingFee;
 
-  const handleCompleteOrder = (e: React.FormEvent) => {
+  const handleCompleteOrder = async (e: React.FormEvent) => {
     e.preventDefault();
 
     const orderId = `VA-${Math.floor(1000 + Math.random() * 9000)}`;
@@ -58,7 +58,7 @@ export const CartDrawer: React.FC<CartDrawerProps> = ({
     };
 
     // حفظ الطلبية في سجل المتجر
-    saveOrder(newOrder);
+    await saveOrder(newOrder);
     setCreatedOrder(newOrder);
     setCheckoutStep('success');
 

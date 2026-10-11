@@ -1,5 +1,6 @@
 import React from 'react';
 import { ArrowLeft, MessageCircle, Truck, ShieldCheck, CheckCircle2 } from 'lucide-react';
+import heroImage from '../assets/images/red_worms_container_1791467929309.jpg';
 import { WormLogo } from './WormLogo';
 
 interface HeroProps {
@@ -107,7 +108,7 @@ export const Hero: React.FC<HeroProps> = ({ onOrderClick, onWhatsAppClick }) => 
             {/* بطاقة الصورة الرئيسية */}
             <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-[#DFD8CA] bg-[#EFECE4] aspect-[4/3] sm:aspect-[16/11]">
               <img
-                src="/src/assets/images/red_worms_container_1791467929309.jpg"
+                src={heroImage}
                 alt="الدودة الحمراء الأصلية في صندوق التسميد بالمغرب"
                 referrerPolicy="no-referrer"
                 className="w-full h-full object-cover object-center transition-transform duration-700 hover:scale-105"

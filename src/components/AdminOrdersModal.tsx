@@ -38,22 +38,27 @@ export const AdminOrdersModal: React.FC<AdminOrdersModalProps> = ({ isOpen, onCl
   const [savedSettingsNotice, setSavedSettingsNotice] = useState(false);
 
   useEffect(() => {
-    if (isOpen) {
-      setOrders(getOrders());
-      setSettings(getStoreSettings());
-    }
+    if (!isOpen) return;
+
+    const loadData = async () => {
+      const [ordersData, settingsData] = await Promise.all([getOrders(), Promise.resolve(getStoreSettings())]);
+      setOrders(ordersData);
+      setSettings(settingsData);
+    };
+
+    void loadData();
   }, [isOpen]);
 
   if (!isOpen) return null;
 
-  const handleStatusChange = (orderId: string, newStatus: OrderRecord['status']) => {
-    const updated = updateOrderStatus(orderId, newStatus);
+  const handleStatusChange = async (orderId: string, newStatus: OrderRecord['status']) => {
+    const updated = await updateOrderStatus(orderId, newStatus);
     setOrders(updated);
   };
 
-  const handleDelete = (orderId: string) => {
+  const handleDelete = async (orderId: string) => {
     if (window.confirm('هل أنت متأكد من حذف هذه الطلبية من السجل؟')) {
-      const updated = deleteOrder(orderId);
+      const updated = await deleteOrder(orderId);
       setOrders(updated);
     }
   };

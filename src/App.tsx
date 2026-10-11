@@ -15,6 +15,7 @@ import { CartDrawer } from './components/CartDrawer';
 import { AdminOrdersModal } from './components/AdminOrdersModal';
 import { ArabicProduct, ProductPackage, CartItemArabic, ARABIC_PRODUCTS } from './data/products';
 import { getStoreSettings } from './data/ordersStore';
+import redWormsCluster from './assets/images/red_worms_cluster_1791467942508.jpg';
 import { MessageCircle, PhoneCall, Truck } from 'lucide-react';
 
 export default function App() {
@@ -76,7 +77,7 @@ export default function App() {
       packageName: 'علبة 3 كيلو (300 دودة)',
       price: 550,
       quantity: 1,
-      image: '/src/assets/images/red_worms_cluster_1791467942508.jpg',
+      image: redWormsCluster,
     }
   ]);
 
